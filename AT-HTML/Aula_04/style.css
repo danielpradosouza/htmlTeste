@@ -1,3 +1,17 @@
 body{ 
-    background-color: #dc143c;
+    background-color: #149ddc;
+    color: bisque;
+    font-family: Tahoma,Verdana,Arial,sans-serif ;
+
+
 }
+h1{
+
+    color: red;
+    font-size: 35px;
+}
+p{
+
+    font-size: 10px;
+}
+
