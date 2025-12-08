@@ -1,0 +1,151 @@
+/* 1. Reset Básico e Estilos Globais */
+* {
+    /* Reseta margens e preenchimentos padrão */
+    margin: 0;
+    padding: 0;
+    /* Faz o padding e a borda serem incluídos na largura/altura total do elemento */
+    box-sizing: border-box; 
+}
+
+body {
+    /* Fundo preto como na imagem */
+    background-color: #000000; 
+    /* Fonte sem serifa clara e legível */
+    font-family: Arial, sans-serif; 
+    /* Garante que o corpo ocupa toda a altura da tela */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. Estilização da Seção Principal */
+.about-section {
+    /* Define o layout como Flexbox */
+    display: flex; 
+    /* Limita a largura máxima da seção */
+    max-width: 1200px; 
+    /* Adiciona uma margem interna de segurança */
+    padding: 20px; 
+    /* Usa uma pequena margem para centralizar em telas maiores */
+    margin: 40px auto; 
+    /* Borda sutil de 2px, como parece na imagem */
+    border: 2px solid #222222; 
+    /* Cor branca geral para o texto, já que o fundo é preto */
+    color: white; 
+}
+
+/* 3. Bloco da Imagem Grande (Esquerda) */
+.left-image {
+    /* Ocupa 50% da largura em telas grandes */
+    flex: 1; 
+    /* Garante que a imagem não vai ultrapassar seu contêiner */
+    overflow: hidden; 
+}
+
+.left-image img {
+    /* Faz a imagem preencher todo o contêiner */
+    width: 100%; 
+    height: auto;
+    /* Garante que ela se adapte bem */
+    display: block; 
+}
+
+/* 4. Bloco do Conteúdo (Direita) */
+.right-content {
+    /* Ocupa 50% da largura em telas grandes */
+    flex: 1; 
+    /* Adiciona um espaço entre a imagem grande e o conteúdo */
+    padding-left: 50px; 
+    /* Flexbox para organizar o conteúdo (título, texto, imagem menor) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para empurrar a imagem menor para baixo */
+}
+
+/* Título 'Sobre' */
+.title {
+    /* Fonte maior e mais impactante */
+    font-size: 5rem; 
+    /* Usa uma fonte que pareça mais robusta, substitua se necessário */
+    font-family: 'Georgia', serif; 
+    /* Adiciona uma margem inferior */
+    margin-bottom: 20px; 
+    /* Para o efeito de contorno, embora mais complexo */
+    text-shadow: 2px 2px #555; 
+}
+
+/* Texto do Parágrafo */
+.text {
+    /* Fonte maior para boa legibilidade */
+    font-size: 1.2rem; 
+    /* Espaço entre linhas */
+    line-height: 1.6; 
+    /* Margem inferior */
+    margin-bottom: 30px; 
+}
+
+/* Imagem Menor (Abaixo do Texto) */
+.bottom-image {
+    /* Limita a largura do contêiner da imagem menor (ex: 70% da área direita) */
+    width: 70%; 
+    /* Ajusta a margem para alinhamento ou posicionamento */
+    align-self: flex-end; 
+}
+
+.bottom-image img {
+    /* Faz a imagem preencher o contêiner limitado */
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* 5. Responsividade (Media Queries) */
+/* Quando a tela tiver 800px ou menos de largura */
+@media (max-width: 800px) {
+    .about-section {
+        /* Muda o layout para empilhar os blocos verticalmente */
+        flex-direction: column; 
+        /* Remove a borda da seção em telas pequenas */
+        border: none; 
+        /* Preenchimento mais apertado */
+        padding: 10px;
+    }
+
+    /* Ajustes na Imagem Grande */
+    .left-image {
+        /* Ocupa toda a largura */
+        width: 100%; 
+        /* Margem inferior para separar do conteúdo */
+        margin-bottom: 20px; 
+    }
+
+    /* Ajustes no Conteúdo */
+    .right-content {
+        /* Remove o padding lateral */
+        padding-left: 0; 
+        /* Alinha o título */
+        align-items: center; 
+        /* Centra o texto */
+        text-align: center;
+    }
+
+    /* Ajustes de Fonte */
+    .title {
+        font-size: 3.5rem; /* Título menor */
+    }
+
+    .text {
+        font-size: 1rem; /* Texto menor */
+    }
+
+    /* Ajuste na Imagem Menor */
+    .bottom-image {
+        /* Ocupa mais largura */
+        width: 100%; 
+        /* Alinha a imagem menor ao centro */
+        align-self: center; 
+        /* Margem superior para separar do texto */
+        margin-top: 20px;
+    }
+}
