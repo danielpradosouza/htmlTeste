@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "DynaPuff.ttf";
+    src: url(DynaPuff/static/DynaPuff-Regular.ttf)format("truetype");
+    font-weight: 700px;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Livvic.ttf";
+    src: url(Livvic/Livvic-Regular.ttf)format("truetype");
+    font-weight: 700px;
+    font-style: normal;
+}
+
+h1{ font-size: 35px;
+   font-family: "DynaPuff.ttf";
+   color: white;
+   text-align: center;
+  }
+body{
+    background-color: black;
+}
+p{
+    font-size: 12px;
+    font-family:"Livvic.ttf" ;
+    color: white;
+    text-align: justify;
+    text-indent: 30px;
+}img {
+  max-width: 100%; 
+  height: auto;   
+}
+img.imagem-desfocada{
+    filter: blur(5px);
+    transition: filter 0.3s ease;;
+}
