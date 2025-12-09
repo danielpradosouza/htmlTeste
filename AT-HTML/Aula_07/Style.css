@@ -11,7 +11,7 @@
     font-style: normal;
 }
 
-h1{ font-size: 35px;
+h1{ font-size: 60px;
    font-family: "DynaPuff.ttf";
    color: white;
    text-align: center;
@@ -21,14 +21,16 @@ body{
     
 }
 p{
-    font-size: 12px;
+    font-size: 30px;
     font-family:"Livvic.ttf" ;
     color: white;
     text-align: justify;
     text-indent: 30px;
 }img{
   max-width: 100%; 
-  height: auto;   
+  height: auto; 
+  
+    
 }
 img.imagem-desfocada{
     filter: blur(5px);
@@ -41,4 +43,23 @@ img.imagem-lateral{
     max-width: 100%;
     width: 900px;
     height: 1200;
+}
+div.imagem-texto{
+margin-left: 20px;
+margin-right: 20px;
+ display: flex;
+ align-items: center;
+ gap: 20px;
+
+}
+.imagem-logos{
+    margin-left: 20px;
+margin-right: 20px;
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.imagem-logos img{
+    width: 75px;
+    height: auto;
 }
