@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form action="site.js">
+        <h1>formulario de contato</h1>
+        <label for="nome">Nome</label>
+        <br>
+        <input type="text" name="nome" id="inome" placeholder="Digite Seu Nome" required>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="iemail" placeholder="Digite seu email" required>
+        <br>
+        <label for="telefone">Telefone</label>
+        <br>
+        <input type="tel" name="telefone" id="itelefone" placeholder="Digite Seu Telefone" required>
+        <br>
+        <label for="assunto">Assunto</label>
+        <br>
+        <input class="mensagem" type="text" name="assunto" id="iassunto" placeholder="Digite o assunto a ser resolvido" required>
+        <br>
+        <label for="mensagem">Mensagem</label>
+        <br>
+         <input class="mensagem" type="text" name="mensagem" id="imensagem" placeholder="Digite a sua dúvida ou mensagem" required>
+         <br>
+        <p>
+            Gênero <br>
+            <input type="radio" name="genero" id="igenero">
+            <label for="igenero"> Feminino</label><br>
+            <input type="radio" name="genero" id="imasc">
+            <label for="imasc"> Masculino</label><br>
+            <input type="radio" name="genero" id="ioutros">
+            <label for="ioutros"> Outros</label><br>
+        </p>
+        <p>
+            Preferência de Contato 
+            <br>
+            <input type="checkbox" name="notiEmail" id="inotiEmail">
+            <label for=" Dese"></label>
+        </p>
+
+    </form>
+</body>
+</html>
