@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+form{
+    background-color: bisque;
+    color: blue;
+}
+body{
+    background-color: blanchedalmond;
+}
+textarea{
+    background-color: azure;
+}
+.gravar{
+    background-color: greenyellow;
+}
+.limpar{
+    background-color: rgb(253, 111, 111);
+}

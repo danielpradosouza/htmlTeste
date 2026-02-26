@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>formulario</title>
 </head>
 <body>
@@ -22,11 +23,11 @@
         <br>
         <label for="assunto">Assunto</label>
         <br>
-        <input class="mensagem" type="text" name="assunto" id="iassunto" placeholder="Digite o assunto a ser resolvido" required>
+        <textarea name="assunto" id="iassunto" cols="40" rows="10" placeholder="Digite o assunto a ser tratado" required></textarea>
         <br>
         <label for="mensagem">Mensagem</label>
         <br>
-         <input class="mensagem" type="text" name="mensagem" id="imensagem" placeholder="Digite a sua dúvida ou mensagem" required>
+        <textarea name="mensagem" id="imensagem" cols="40" rows="10" placeholder="Digite a duvida ou mensagem que colocar " required></textarea>
          <br>
         <p>
             Gênero <br>
@@ -41,8 +42,29 @@
             Preferência de Contato 
             <br>
             <input type="checkbox" name="notiEmail" id="inotiEmail">
-            <label for=" Dese"></label>
+            <label for="inotiEmail">Desejo receber notificações por e-mail</label>
+            <br>
+            <input type="checkbox" name="notiSMS" id="inotiSMS">
+            <label for="inotiSMS">Desejo receber notificações por SMS</label>
+            <br>
+            <input type="checkbox" name="notiTele" id="inotiTele">
+            <label for="inotiTele">Desejo ser contatado por Telefone</label>
         </p>
+        <p>
+            Escolha de Serviço
+            <select name="serviço" id="iserviço">
+                <option value="nenhum">--------------------</option>
+                <option value="supTecnico"> Suporte Técnico</option>
+                <option value="reclamacoes">Reclamações</option>
+                <option value="sugestoes"> Sugestões</option>
+                <option value="elogios"> Elogios</option>
+                <option value="outrosServ"> Outros</option>
+            </select>
+        </p>
+     <p class="Enviar">
+     <button type="submit" class="gravar"> gravar</button>
+     <button type="reset" class="limpar"> limpar</button>
+     </p>
 
     </form>
 </body>
