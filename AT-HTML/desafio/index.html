@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desafio</title>
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div id="status">
@@ -27,16 +28,16 @@
         <h1>
             Interações Basicas
         </h1>
-     <button id="alert">
+     <button onclick="showAlert()" id="alert">
            Alert   
      </button>
-     <button id="confirm">
+     <button onclick="showConfirm()" id="confirm">
         Confirm
      </button>
      <button id="prompt">
         Prompt
      </button>
-     <button id="console">
+     <button onclick="showLog()" id="console">
         Console.log
      </button>
     </div>
@@ -51,7 +52,7 @@
         <button id="input">
         Mostrar na tela
         </button>
-        <button id="titulo">
+        <button onclick="mudarTitulo()" id="titulo">
             Mudar Título
         </button>
         <button id="tema">
@@ -67,5 +68,6 @@
           interaja.....
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
