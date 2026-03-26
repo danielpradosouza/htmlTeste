@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Imagem</title>
+</head>
+<body>
+    <div>
+        trocar imagem
+    </div>
+    <img src="images.jpg" alt="imagem 1" id="imagem">
+    <br>
+    <button id="botao"> trocar imagem</button>
+    <script>
+     const img = document.getElementById('imagem')
+     const botao=document.getElementById('botao')
+
+    botao.addEventListener('click', () => {
+    if (img.src.includes('images.jpg')) {
+        img.src = 'download.jpg';
+    } else {
+        img.src = 'images.jpg';
+    }
+});
+    </script>
+</body>
+</html>

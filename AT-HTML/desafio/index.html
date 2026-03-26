@@ -8,6 +8,7 @@
 
 </head>
 <body>
+    <main class="container">
     <div id="status">
         <h1>
             Status
@@ -34,7 +35,7 @@
      <button onclick="showConfirm()" id="confirm">
         Confirm
      </button>
-     <button id="prompt">
+     <button onclick="nomePrompt()" id="prompt">
         Prompt
      </button>
      <button onclick="showLog()" id="console">
@@ -49,13 +50,13 @@
         <br>
         <input type="text" name="nome" id="inome" size="20px">
         <br>
-        <button id="input">
+        <button onclick="nomeInput()" id="input">
         Mostrar na tela
         </button>
         <button onclick="mudarTitulo()" id="titulo">
             Mudar Título
         </button>
-        <button id="tema">
+        <button onclick="mudarTema()" id="tema">
             Trocar tema
         </button>
         <button>
@@ -69,5 +70,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    </main>
+    
 </body>
 </html>
