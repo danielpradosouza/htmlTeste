@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showroom JavaScript</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>desafio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="container">
 
-    <h1>Texto alterado com JavaScript</h1>
-    <p class="subtitle">
-        Clique nos botões para ver alert, prompt, confirm, DOM, eventos e notificação.
-    </p>
+        <div id="status">
+            <h1>Status</h1>
+            <p id="acao">Aguardando ação ...</p>
 
-    <!-- STATUS -->
-    <section class="box">
-        <h2>Status</h2>
-        <p id="status-text">Título alterado ✅</p>
-        <p>Cliques: <span id="clicks">7</span> &nbsp;&nbsp; Hora: <span id="hora">09:48:05</span></p>
-    </section>
+            <div id="clicar">
+                <p id="cliques">Cliques:</p>
+                <p id="clicou">0</p>
+            </div>
+        </div>
 
-    <!-- INTERAÇÕES BÁSICAS -->
-    <section class="box">
-        <h2>Interações básicas</h2>
+        <div id="interBasicas">
+            <h1>Interações Básicas</h1>
 
-        <div class="btn-group">
             <button onclick="showAlert()">Alert</button>
             <button onclick="showConfirm()">Confirm</button>
-            <button onclick="showPrompt()">Prompt</button>
+            <button onclick="nomePrompt()">Prompt</button>
             <button onclick="showLog()">Console.log</button>
         </div>
-    </section>
 
-    <!-- DOM + EVENTOS -->
-    <section class="box">
-        <h2>DOM + Eventos</h2>
+        <div id="domEvent">
+            <h1>DOM + Eventos</h1>
 
-        <label>Digite seu nome:</label>
-        <input id="nome" type="text" placeholder="Digite aqui...">
+            <label for="inome">Digite seu Nome:</label><br>
+            <input type="text" id="inome" placeholder="Seu nome aqui">
 
-        <div class="btn-group">
-            <button onclick="mostrarNome()">Mostrar na tela</button>
-            <button onclick="mudarTitulo()">Mudar título</button>
-            <button onclick="trocarTema()">Trocar tema</button>
-            <button onclick="somar()">Somar 2 números</button>
+            <button onclick="nomeInput()">Mostrar na tela</button>
+            <button onclick="mudarTitulo()">Mudar Título</button>
+            <button onclick="mudarTema()">Trocar tema</button>
+
+            <br><br>
+
+            <h3>Somar dois números</h3>
+            <input type="number" id="num1" placeholder="Número 1">
+            <input type="number" id="num2" placeholder="Número 2">
+            <button onclick="somar()">Somar</button>
+
+            <p>Extra: passe o mouse no bloco abaixo 👇</p>
+            <div id="mouseEvent">interaja.....</div>
         </div>
 
-        <p>Extra: passe o mouse no bloco abaixo 👇</p>
+        <script src="script.js"></script>
 
-        <div id="hoverBox" class="hover-box">
-            Saiu (mouseleave)
-        </div>
-
-        <div id="notif" class="notification">
-            Mouse entrou na caixa!
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>

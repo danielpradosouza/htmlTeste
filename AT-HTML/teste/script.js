@@ -1,47 +1,60 @@
+var cliques = document.querySelector('#clicou');
+var acao = document.querySelector('#acao');
+let contador = 0;
+
+// ALERT
 function showAlert() {
-    alert("Este é um alerta!");
+    alert("Esse é um alerta do JavaScript!");
+    acao.innerText = "Alerta confirmado ✅";
 }
 
+// CONFIRM
 function showConfirm() {
-    confirm("Você confirma?");
+    let resposta = confirm("Deseja confirmar?");
+    acao.innerText = resposta ? "Confirmou a ação" : "Não confirmou a ação";
 }
 
-function showPrompt() {
-    prompt("Qual é o seu nome?");
+// PROMPT
+function nomePrompt(){
+    let nome = prompt("Digite o seu nome");
+    acao.innerText = 'Olá ' + nome;
 }
 
-function showLog() {
+// CONSOLE.LOG
+function showLog(){
     console.log("Mensagem no console!");
+    acao.innerText = "Mensagem enviada ao console ✅";
 }
 
-function mostrarNome() {
-    let nome = document.getElementById("nome").value;
-    alert("O nome digitado foi: " + nome);
+// INPUT NOME
+function nomeInput(){
+    let nomeInpu = document.getElementById('inome').value;
+    acao.innerText = 'Olá ' + nomeInpu;
 }
 
-function mudarTitulo() {
-    document.querySelector("h1").innerText = "Título alterado com sucesso!";
-    document.getElementById("status-text").innerHTML = "Título alterado ✅";
+// MUDAR TÍTULO
+function mudarTitulo(){
+    document.querySelector('#status h1').innerText = "Título alterado ✅";
+    acao.innerText = "Título alterado ✅";
 }
 
-function trocarTema() {
-    document.body.classList.toggle("tema-claro");
+// TEMA
+function mudarTema(){
+    document.body.classList.toggle("temaClaro");
 }
 
-function somar() {
-    let a = Number(prompt("Digite o primeiro número:"));
-    let b = Number(prompt("Digite o segundo número:"));
-    alert("Resultado: " + (a + b));
+// CONTADOR DE CLIQUES (opcional)
+function contarClique() {
+    contador++;
+    cliques.innerText = contador;
 }
 
-// Hover Box
-const box = document.getElementById("hoverBox");
-const notif = document.getElementById("notif");
+// ✅ SOMA DOS NÚMEROS
+function somar(){
+    let n1 = Number(document.getElementById("num1").value);
+    let n2 = Number(document.getElementById("num2").value);
 
-box.addEventListener("mouseenter", () => {
-    notif.style.display = "block";
-});
+    let resultado = n1 + n2;
 
-box.addEventListener("mouseleave", () => {
-    notif.style.display = "none";
-});
+    acao.innerText = `A soma é: ${resultado}`;
+}
