@@ -2,6 +2,12 @@ body{
     background-color: rgb(17, 17, 58);
 }
 
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
 div{
     background-color: rgb(26, 54, 105);
     color: white;
@@ -76,4 +82,9 @@ body.temaclaro input{
     margin-left: auto;
     
     color: rgb(0, 0, 0);}
-
+    body.temaclaro h1{
+        color: rgb(0, 0, 0);}
+    
+ body.temaclaro h2{
+        color: rgb(0, 0, 0);}
+    

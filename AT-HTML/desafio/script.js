@@ -1,6 +1,7 @@
 var cliques = document.querySelector('#clicou');
 var acao = document.querySelector('#acao');
 var contador=0
+var titulo=document.getElementById('titulo')
 var passarOMuose=document.getElementById('mouse')
 function incrementar(){
     contador++
@@ -40,12 +41,13 @@ function nomeInput(){
 }
 function mudarTitulo() {
     incrementar()
-    document.querySelector('#status h1').innerText = "Título alterado ✅";
+    titulo.innerText = "Título alterado ✅";
     acao.innerText = "Título alterado ✅";
 }
 function mudarTema(){
     incrementar()
     document.body.classList.toggle('temaclaro');
+    acao.innerHTML="Tema alterado ✅"
 }
 function somarNum(){
         incrementar()
